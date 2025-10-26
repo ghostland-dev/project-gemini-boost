@@ -16,7 +16,7 @@ export const CTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="gap-2">
+            <Button variant="hero" size="lg" className="gap-2" onClick={() => window.location.href = '/auth'}>
               <Github className="h-5 w-5" />
               Commencer maintenant
               <ArrowRight className="h-5 w-5" />

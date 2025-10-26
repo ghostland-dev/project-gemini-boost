@@ -38,12 +38,12 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="gap-2">
+            <Button variant="hero" size="lg" className="gap-2" onClick={() => window.location.href = '/auth'}>
               <Github className="h-5 w-5" />
               Connecter GitHub
               <ArrowRight className="h-5 w-5" />
             </Button>
-            <Button variant="glass" size="lg">
+            <Button variant="glass" size="lg" onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}>
               Voir la démo
             </Button>
           </div>
